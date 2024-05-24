@@ -1,0 +1,96 @@
+html,
+body {
+  touch-action: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: #191a1b;
+}
+
+body {
+  color: #ffffff;
+  background: #191a1b;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px;
+}
+.login__modal-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.login__modal {
+  margin: 16px;
+  display: flex;
+  padding: 40px 32px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 392px;
+  width: 100%;
+  height: max-content;
+  border-radius: 16px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.login__modal h1 {
+  color: #191c21;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+.login__modal h3 {
+  color: #191c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin: 16px auto 8px;
+}
+.login__modal h5 {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.login__modal h5 p {
+  color: #6228d6;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
