@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import { saveToLocalStorage } from './tokenStorage';
-const url = `http://localhost:8080/`;
+const url = `https://frontend-nu-nine-87.vercel.app/`;
 export const loginAPI = async (username: string, password: string) => {
   try {
     const response = await axios.post(url + 'login', {
