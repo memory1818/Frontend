@@ -2,7 +2,6 @@ import { Loader } from '@mantine/core';
 import React from 'react';
 import styled from 'styled-components';
 
-import metadata from '~/config/metadata';
 import theme from '~/theme';
 
 const Div = styled.div`
@@ -17,11 +16,6 @@ const Div = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
-
-const LogoImg = styled.img`
-  width: 120px;
-  margin-bottom: 1.5rem;
 `;
 
 export default function LoadingOverlay() {

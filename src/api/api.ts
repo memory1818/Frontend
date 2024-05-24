@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-import { getFromLocalStorage, saveToLocalStorage } from './tokenStorage';
+import { saveToLocalStorage } from './tokenStorage';
 const url = `http://localhost:8080/`;
-const token = getFromLocalStorage('TOKEN');
 export const loginAPI = async (username: string, password: string) => {
   try {
     const response = await axios.post(url + 'login', {
